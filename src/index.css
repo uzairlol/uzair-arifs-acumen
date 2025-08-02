@@ -109,4 +109,23 @@ All colors MUST be HSL. Earthy tones: maroon, olive green, warm beige, dark grey
   .bg-gradient-radial {
     background: radial-gradient(circle, var(--tw-gradient-stops));
   }
+
+  /* Hollow text effect */
+  .text-hollow {
+    color: transparent;
+    -webkit-text-stroke: 2px hsl(var(--primary));
+    text-stroke: 2px hsl(var(--primary));
+  }
+
+  .text-hollow-thick {
+    color: transparent;
+    -webkit-text-stroke: 4px hsl(var(--primary));
+    text-stroke: 4px hsl(var(--primary));
+  }
+
+  .text-hollow-secondary {
+    color: transparent;
+    -webkit-text-stroke: 3px hsl(var(--secondary));
+    text-stroke: 3px hsl(var(--secondary));
+  }
 }

@@ -21,16 +21,18 @@ const skillCategories = [
 const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-background relative overflow-hidden">
-      {/* Background Typography */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-        <div className="text-[20rem] font-serif font-bold text-primary absolute -top-32 -left-20 transform -rotate-12">ML</div>
-        <div className="text-[15rem] font-sans font-black text-secondary absolute top-1/2 -right-32 transform rotate-12">DATA</div>
+      {/* Background Typography - Hollow Text */}
+      <div className="absolute inset-0 opacity-15 pointer-events-none">
+        <div className="text-[18rem] font-serif font-black text-hollow absolute -top-20 -left-20 transform -rotate-12">SKILLS</div>
+        <div className="text-[12rem] font-sans font-black text-hollow-secondary absolute top-1/2 -right-24 transform rotate-12">TECH</div>
       </div>
       
-      {/* Abstract Patterns */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <div className="absolute top-20 left-1/4 w-64 h-64 bg-gradient-to-r from-primary to-secondary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-1/4 w-48 h-48 bg-gradient-to-l from-accent to-primary rounded-full blur-3xl"></div>
+      {/* Vibrant Abstract Patterns */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-20 left-1/4 w-64 h-64 bg-gradient-radial from-primary/40 to-transparent rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 right-1/4 w-48 h-48 bg-gradient-radial from-accent/40 to-transparent rounded-full blur-xl"></div>
+        <div className="absolute top-1/2 left-1/2 w-32 h-32 border-4 border-secondary transform rotate-45"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-20 h-80 bg-gradient-to-t from-primary via-accent to-secondary transform -skew-y-12"></div>
       </div>
       
       <div className="container mx-auto px-4 max-w-6xl relative z-10">

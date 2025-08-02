@@ -61,37 +61,45 @@ const Contact = () => {
             </div>
           </div>
           
-          {/* Languages & Interests */}
-          <div className="space-y-8">
-            <div className="bg-card p-6 rounded-xl border border-border">
-              <h4 className="text-lg font-semibold text-foreground mb-4">Languages</h4>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">English</span>
-                  <span className="text-sm text-primary">Fluent</span>
+          {/* Hobbies & Interests */}
+          <div className="bg-card p-6 rounded-xl border border-border">
+            <h4 className="text-lg font-semibold text-foreground mb-4">Hobbies & Interests</h4>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary text-xs">🚣</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Urdu</span>
-                  <span className="text-sm text-primary">Native</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">French</span>
-                  <span className="text-sm text-secondary">Learning</span>
-                </div>
+                <span className="text-muted-foreground text-sm">Rowing</span>
               </div>
-            </div>
-            
-            <div className="bg-card p-6 rounded-xl border border-border">
-              <h4 className="text-lg font-semibold text-foreground mb-4">Interests</h4>
-              <div className="flex flex-wrap gap-2">
-                {["Rowing", "Gym", "Abstract Art", "Vinyl Collection", "Climate Tech", "AI for Policy"].map((interest, index) => (
-                  <span 
-                    key={index}
-                    className="px-3 py-1 bg-accent/20 text-accent-foreground rounded-full text-sm"
-                  >
-                    {interest}
-                  </span>
-                ))}
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary text-xs">💪</span>
+                </div>
+                <span className="text-muted-foreground text-sm">Gym</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary text-xs">🎨</span>
+                </div>
+                <span className="text-muted-foreground text-sm">Abstract Art</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary text-xs">🎵</span>
+                </div>
+                <span className="text-muted-foreground text-sm">Vinyl Collection</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary text-xs">🌱</span>
+                </div>
+                <span className="text-muted-foreground text-sm">Climate Tech</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <span className="text-primary text-xs">🤖</span>
+                </div>
+                <span className="text-muted-foreground text-sm">AI Policy</span>
               </div>
             </div>
           </div>

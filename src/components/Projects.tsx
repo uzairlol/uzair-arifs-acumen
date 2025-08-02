@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink, Filter } from "lucide-react";
+import { Github, Filter } from "lucide-react";
 
 const projects = [
   {
@@ -72,17 +72,19 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20 bg-card relative overflow-hidden">
-      {/* Background Typography */}
-      <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
-        <div className="text-[25rem] font-serif font-bold text-primary absolute -top-40 -right-40 transform rotate-12">CODE</div>
-        <div className="text-[18rem] font-sans font-black text-secondary absolute bottom-0 -left-32 transform -rotate-12">BUILD</div>
+      {/* Background Typography - Hollow Text */}
+      <div className="absolute inset-0 opacity-15 pointer-events-none">
+        <div className="text-[20rem] font-serif font-black text-hollow-thick absolute -top-32 left-1/2 transform -translate-x-1/2 rotate-6">PORTFOLIO</div>
+        <div className="text-[12rem] font-sans font-black text-hollow-secondary absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4 -rotate-12">WORK</div>
       </div>
       
-      {/* Abstract Geometric Patterns */}
-      <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
-        <div className="absolute top-1/4 left-1/3 w-32 h-32 border-2 border-primary transform rotate-45"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-24 h-24 bg-accent rounded-full"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-64 bg-gradient-to-b from-primary to-transparent transform -skew-x-12"></div>
+      {/* Vibrant Abstract Patterns */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-1/4 left-1/3 w-32 h-32 border-4 border-accent transform rotate-45"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-24 h-24 bg-secondary rounded-full"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-64 bg-gradient-to-b from-primary via-accent to-secondary transform -skew-x-12"></div>
+        <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-gradient-to-r from-accent to-primary transform rotate-45"></div>
+        <div className="absolute bottom-1/3 left-1/2 w-40 h-2 bg-gradient-to-r from-secondary via-primary to-accent transform -rotate-45"></div>
       </div>
       
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
@@ -145,10 +147,6 @@ const Projects = () => {
                   <Button variant="outline" size="sm" className="flex-1 hover:bg-primary hover:text-primary-foreground">
                     <Github className="mr-2 h-4 w-4" />
                     Code
-                  </Button>
-                  <Button variant="outline" size="sm" className="flex-1 hover:bg-secondary hover:text-secondary-foreground">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Demo
                   </Button>
                 </div>
               </div>
