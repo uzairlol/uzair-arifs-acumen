@@ -2,36 +2,43 @@ import { Code, Database, Brain, BarChart } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Programming Languages",
+    title: "Core Programming",
     icon: Code,
-    skills: ["Python", "R", "SQL", "HTML/CSS", "JavaScript"]
+    skills: ["Python", "R", "SQL"]
   },
   {
-    title: "ML & Data Science",
+    title: "Machine Learning",
     icon: Brain,
-    skills: ["scikit-learn", "TensorFlow", "PyTorch", "Prophet", "Darts"]
+    skills: ["scikit-learn", "TensorFlow", "PyTorch", "Prophet", "Darts", "XGBoost"]
   },
   {
-    title: "Data Analysis",
+    title: "Data Science Stack",
     icon: BarChart,
-    skills: ["pandas", "NumPy", "matplotlib", "seaborn", "Plotly"]
-  },
-  {
-    title: "Tools & Technologies",
-    icon: Database,
-    skills: ["Streamlit", "ZeroMQ", "Git", "QGIS", "Jupyter"]
+    skills: ["pandas", "NumPy", "matplotlib", "seaborn", "Plotly", "Jupyter"]
   }
 ];
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-background">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <section id="skills" className="py-20 bg-background relative overflow-hidden">
+      {/* Background Typography */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <div className="text-[20rem] font-serif font-bold text-primary absolute -top-32 -left-20 transform -rotate-12">ML</div>
+        <div className="text-[15rem] font-sans font-black text-secondary absolute top-1/2 -right-32 transform rotate-12">DATA</div>
+      </div>
+      
+      {/* Abstract Patterns */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
+        <div className="absolute top-20 left-1/4 w-64 h-64 bg-gradient-to-r from-primary to-secondary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-1/4 w-48 h-48 bg-gradient-to-l from-accent to-primary rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <h2 className="text-4xl font-serif font-semibold text-center text-foreground mb-12">
-          Technical <span className="text-primary">Skills</span>
+          Technical <span className="text-primary">Expertise</span>
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (

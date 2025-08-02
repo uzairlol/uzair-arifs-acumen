@@ -4,8 +4,20 @@ import heroImage from "@/assets/hero-silhouette.jpg";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted px-4">
-      <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center max-w-6xl">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted px-4 relative overflow-hidden">
+      {/* Large Background Typography */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <div className="text-[30rem] font-serif font-bold text-primary absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-6">DATA</div>
+      </div>
+      
+      {/* Abstract Flowing Elements */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute top-1/4 left-10 w-96 h-2 bg-gradient-to-r from-primary via-accent to-transparent transform -rotate-12"></div>
+        <div className="absolute bottom-1/4 right-10 w-80 h-1 bg-gradient-to-l from-secondary via-primary to-transparent transform rotate-12"></div>
+        <div className="absolute top-1/2 right-20 w-2 h-96 bg-gradient-to-b from-accent via-primary to-transparent transform rotate-45"></div>
+      </div>
+      
+      <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center max-w-6xl relative z-10">
         {/* Text Content */}
         <div className="space-y-8">
           <div className="space-y-4">

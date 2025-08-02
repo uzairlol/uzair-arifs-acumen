@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Pakistan Inflation Forecasting",
     description: "Economic forecasting model that outperforms traditional benchmarks using ensemble methods.",
-    category: "Research",
+    category: "Forecasting",
     technologies: ["R", "Prophet", "Economic Modeling", "Time Series"],
     githubUrl: "#",
     demoUrl: "#"
@@ -61,7 +61,7 @@ const projects = [
   }
 ];
 
-const categories = ["All", "ML", "Data Viz", "Forecasting", "Research"];
+const categories = ["All", "ML", "Data Viz", "Forecasting"];
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -71,8 +71,21 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   return (
-    <section id="projects" className="py-20 bg-card">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <section id="projects" className="py-20 bg-card relative overflow-hidden">
+      {/* Background Typography */}
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
+        <div className="text-[25rem] font-serif font-bold text-primary absolute -top-40 -right-40 transform rotate-12">CODE</div>
+        <div className="text-[18rem] font-sans font-black text-secondary absolute bottom-0 -left-32 transform -rotate-12">BUILD</div>
+      </div>
+      
+      {/* Abstract Geometric Patterns */}
+      <div className="absolute inset-0 opacity-[0.08] pointer-events-none">
+        <div className="absolute top-1/4 left-1/3 w-32 h-32 border-2 border-primary transform rotate-45"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-24 h-24 bg-accent rounded-full"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-64 bg-gradient-to-b from-primary to-transparent transform -skew-x-12"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <h2 className="text-4xl font-serif font-semibold text-center text-foreground mb-12">
           Featured <span className="text-primary">Projects</span>
         </h2>

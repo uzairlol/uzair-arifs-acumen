@@ -104,4 +104,9 @@ All colors MUST be HSL. Earthy tones: maroon, olive green, warm beige, dark grey
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Custom gradients for abstract elements */
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
 }

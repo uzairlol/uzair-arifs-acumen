@@ -1,7 +1,18 @@
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-card">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <section id="about" className="py-20 bg-card relative overflow-hidden">
+      {/* Background Typography */}
+      <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
+        <div className="text-[16rem] font-serif font-bold text-primary absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4 rotate-12">ABOUT</div>
+      </div>
+      
+      {/* Subtle Organic Shapes */}
+      <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
+        <div className="absolute top-1/3 left-1/4 w-40 h-40 bg-gradient-radial from-primary to-transparent rounded-full blur-xl"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-32 h-32 bg-gradient-radial from-accent to-transparent rounded-full blur-xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 max-w-4xl relative z-10">
         <div className="text-center space-y-8">
           <h2 className="text-4xl font-serif font-semibold text-foreground">
             About <span className="text-primary">Me</span>
