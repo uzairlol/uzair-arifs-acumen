@@ -4,10 +4,13 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    // Set dark mode as default
+    document.documentElement.classList.add("dark");
+    
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
@@ -48,6 +51,10 @@ const Navigation = () => {
                 key={item.name}
                 href={item.href}
                 className="text-muted-foreground hover:text-primary transition-colors relative group"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 {item.name}
                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
@@ -86,7 +93,11 @@ const Navigation = () => {
                   key={item.name}
                   href={item.href}
                   className="block px-3 py-2 text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(false);
+                    document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                 >
                   {item.name}
                 </a>
