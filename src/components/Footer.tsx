@@ -33,7 +33,7 @@ const Footer = () => {
           
           <div className="space-y-4">
             <p className="text-muted-foreground">
-              © {currentYear} Uzair Arif. All rights reserved.
+              © {currentYear} All rights reserved.
             </p>
             <p className="text-sm text-muted-foreground">
               Last updated: January 2025

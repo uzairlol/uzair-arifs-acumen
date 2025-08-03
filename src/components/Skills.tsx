@@ -2,11 +2,6 @@ import { Code, Database, Brain, BarChart } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Core Programming",
-    icon: Code,
-    skills: ["Python", "R", "SQL"]
-  },
-  {
     title: "Machine Learning",
     icon: Brain,
     skills: ["scikit-learn", "TensorFlow", "PyTorch", "Prophet", "Darts", "XGBoost"]
@@ -14,7 +9,7 @@ const skillCategories = [
   {
     title: "Data Science Stack",
     icon: BarChart,
-    skills: ["pandas", "NumPy", "matplotlib", "seaborn", "Plotly", "Jupyter"]
+    skills: ["Python", "pandas", "NumPy", "matplotlib", "seaborn", "Plotly", "Jupyter"]
   }
 ];
 
@@ -40,7 +35,7 @@ const Skills = () => {
           Technical <span className="text-primary">Expertise</span>
         </h2>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
