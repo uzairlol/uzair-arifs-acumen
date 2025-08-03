@@ -3,8 +3,21 @@ import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <section id="contact" className="py-20 bg-gradient-to-br from-primary/30 via-background to-accent/25 relative overflow-hidden">
+      {/* Background Typography - Hollow Text */}
+      <div className="absolute inset-0 opacity-12 pointer-events-none">
+        <div className="text-[14rem] font-serif font-black text-hollow-thick absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4 rotate-12">CONNECT</div>
+        <div className="text-[10rem] font-sans font-black text-hollow-secondary absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4 -rotate-12">TALK</div>
+      </div>
+      
+      {/* Abstract Elements */}
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-1/4 left-1/3 w-40 h-40 bg-gradient-radial from-primary/40 to-transparent rounded-full blur-xl"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-28 h-28 border-4 border-secondary transform rotate-45"></div>
+        <div className="absolute top-1/2 right-1/3 w-3 h-52 bg-gradient-to-b from-accent via-primary to-secondary transform skew-x-12"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 max-w-4xl relative z-10">
         <h2 className="text-4xl font-serif font-semibold text-center text-foreground mb-12">
           Get In <span className="text-primary">Touch</span>
         </h2>

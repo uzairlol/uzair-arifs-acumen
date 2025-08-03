@@ -71,7 +71,7 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   return (
-    <section id="projects" className="py-20 bg-card relative overflow-hidden">
+    <section id="projects" className="py-20 bg-gradient-to-br from-muted/50 via-card to-secondary/20 relative overflow-hidden">
       {/* Background Typography - Hollow Text */}
       <div className="absolute inset-0 opacity-15 pointer-events-none">
         <div className="text-[20rem] font-serif font-black text-hollow-thick absolute -top-32 left-1/2 transform -translate-x-1/2 rotate-6">PORTFOLIO</div>

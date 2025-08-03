@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-silhouette.jpg";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted px-4 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-primary/5 to-secondary/10 px-4 relative overflow-hidden">
       {/* Large Background Typography - Hollow Text */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="text-[25rem] font-serif font-black text-hollow absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-6">DATA</div>

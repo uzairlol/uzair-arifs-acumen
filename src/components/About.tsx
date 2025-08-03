@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-card relative overflow-hidden">
+    <section id="about" className="py-20 bg-gradient-to-br from-muted/30 via-accent/20 to-card relative overflow-hidden">
       {/* Background Typography - Hollow Text */}
       <div className="absolute inset-0 opacity-12 pointer-events-none">
         <div className="text-[16rem] font-serif font-black text-hollow absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4 rotate-12">ABOUT</div>

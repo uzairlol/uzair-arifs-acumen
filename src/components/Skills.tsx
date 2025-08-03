@@ -20,7 +20,7 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-background relative overflow-hidden">
+    <section id="skills" className="py-20 bg-gradient-to-br from-accent/30 via-background to-primary/20 relative overflow-hidden">
       {/* Background Typography - Hollow Text */}
       <div className="absolute inset-0 opacity-15 pointer-events-none">
         <div className="text-[18rem] font-serif font-black text-hollow absolute -top-20 -left-20 transform -rotate-12">SKILLS</div>

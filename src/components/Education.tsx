@@ -2,8 +2,21 @@ import { GraduationCap, Calendar } from "lucide-react";
 
 const Education = () => {
   return (
-    <section id="education" className="py-20 bg-background">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <section id="education" className="py-20 bg-gradient-to-br from-primary/20 via-background to-secondary/15 relative overflow-hidden">
+      {/* Background Typography - Hollow Text */}
+      <div className="absolute inset-0 opacity-12 pointer-events-none">
+        <div className="text-[14rem] font-serif font-black text-hollow-thick absolute top-0 left-0 transform -translate-x-1/4 -translate-y-1/4 -rotate-12">LEARN</div>
+        <div className="text-[10rem] font-sans font-black text-hollow-secondary absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4 rotate-12">GROW</div>
+      </div>
+      
+      {/* Abstract Elements */}
+      <div className="absolute inset-0 opacity-15 pointer-events-none">
+        <div className="absolute top-1/4 right-1/4 w-28 h-28 border-4 border-accent transform rotate-45"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-36 h-36 bg-gradient-radial from-secondary/40 to-transparent rounded-full blur-xl"></div>
+        <div className="absolute top-1/2 left-1/4 w-2 h-48 bg-gradient-to-b from-primary to-accent transform -skew-y-12"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 max-w-4xl relative z-10">
         <h2 className="text-4xl font-serif font-semibold text-center text-foreground mb-12">
           <span className="text-primary">Education</span>
         </h2>
