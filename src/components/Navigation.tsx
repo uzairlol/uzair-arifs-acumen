@@ -39,10 +39,7 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="font-serif font-semibold text-xl text-foreground">
-            <span className="text-primary">U</span>zair
-          </div>
+          
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
